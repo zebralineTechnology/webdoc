@@ -11,7 +11,7 @@ SELECT TOP 10 * FROM ozUser
 ## Encryption and Decryption
 [sample code](https://github.com/ianyian/EncryptionSymmetricKey.git)
 
-```csharp
+```csharp{3,13,32,41}
     public class AesOperation
     {
         public static string EncryptString(string key, string plainText)
@@ -136,12 +136,10 @@ namespace Restful_ApiKey_based.Filters
 }
 ```
 
-
-
 ## blob
 [sample code](https://github.com/ianyian/AzureBlob.git)
 
-```csharp
+```csharp {14-16}
 using Azure.Storage.Blobs;
 using Azure.Storage.Blobs.Models;
 using System;
@@ -155,7 +153,7 @@ namespace BlobQuickstartV12
     {
         static async Task Main()
         {
-            string connectionString = "DefaultEndpointsProtocol=https;AccountName=sqlvarvrgxbaty2h4s;AccountKey=dubYuxTY/hkTHoZcZz42bKBCrkgnV9RIk9KDP1tJK5cQktML6rWzPoEehWZ3+WJIbDxlnk9nUZcYV5UFEYrH4w==;EndpointSuffix=core.windows.net";
+            string connectionString = "DefaultEndpointsProtocol=https;AccountName=sqlvarvrgxbaty2h4s;AccountKey=dubYuxTY/hkTHoZcZz42bKBCrkgnV9RIk9KDP1tJK5cQktML6rWzPoEehWZ3+WJIbDxlnk9nUZcYV5UFEYrxxxxx;EndpointSuffix=core.windows.net";
             // Create a BlobServiceClient object which will be used to create a container client
             BlobServiceClient blobServiceClient = new BlobServiceClient(connectionString);
 

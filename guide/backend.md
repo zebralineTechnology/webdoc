@@ -1,10 +1,12 @@
-# Backend engine
+# Table of Contents
+[[toc]]
 
-## zeo table structure
+## table structure
 
 ### ozUser
-
-> Represent active user, when user register the APP, then here is the first touch table 
+::: tip
+Represent active user, when user register the APP, then here is the first touch table 
+:::
 
 * ID=Auto incremental
 * GUID=Auto generate
@@ -20,13 +22,19 @@
 * ~~Image=user photo~~ ** Replaced by** `blob`
 
 ### ozUserHistory
-> history of user status/step
+::: tip
+history of user status/step
+:::
 
 ### ozUserDetailHistory
-> history of user profile changes, first time register also need to be recorded.
+::: tip
+history of user profile changes, first time register also need to be recorded.
+:::
 
 ### ozRoute
-> route info, one user can have multiple route
+::: tip
+route info, one user can have multiple route
+:::
 
 * ID=Auto incremental
 * Name=Route name
@@ -41,7 +49,9 @@
 * RouteStepStatusID=Route Step Status ID{ In/Out}
 
 ### ozBus
-> bus info, busID + routeID = BusRouteKey
+::: tip
+bus info, busID + routeID = BusRouteKey
+:::
 
 * ID=Auto incremental
 * PlateNumber=freeText, but need to remove space, plateNumber allow in another userID
@@ -52,40 +62,54 @@
 * Image=Bus picture
 
 ### ozCompany
-> when first time user create route and bus, then this company record will also created
+::: tip
+when first time user create route and bus, then this company record will also created
+:::
 
 * UserID=creatorID
 * CompanyCode=4 random number, unique
 
 ### ozDriverRoute
-> driver and route relationship
-> when first time driver create route and bus, then driverRoute also need to be added
+::: tip
+driver and route relationship
+when first time driver create route and bus, then driverRoute also need to be added
+:::
 
 ### ozUserRoute
-> keep the relationship in between user and route
+::: tip
+keep the relationship in between user and route
+:::
 
 * UserRouteStatusID=Active/InActive/PendingAproval/Reject
 
 ### ozChat
-> chat route history
+::: tip
+chat route history
+:::
 
 ### luChatReason
-> default chatReason, which will easy for user.
+::: tip
+default chatReason, which will easy for user.
+:::
 
 * ID=Auto incremental 
 * LanguageTypeID=Language Type
 * Value=content value
 
 ### luVar
-> key-pair value table, keep those setting variables
+::: warning
+key-pair value table, keep those setting variables
+:::
 
 * ID=auto incremental
 * Key=Key column
 * Value=Value column
 * CreationDt=record create datetime
 
-### LuVersion
-> system version, which included major, patch and hotfix
+### luVersion
+::: danger IMPORTANT
+system version, which included major, patch and hotfix
+:::
 
 * ID=auto incremental
 * Value=value column
