@@ -1,8 +1,8 @@
 ---
 home: true
 heroImage: /images/zebra.jfif
-heroText: Last update > 1st August 2021 7AM
-tagline: v1.0.8
+heroText: Last update > 5rd August 2021
+tagline: v1.0.8.2
 actionText: Get Started →
 actionLink: /guide/
 

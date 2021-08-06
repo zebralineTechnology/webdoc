@@ -1,7 +1,7 @@
-# Table of Contents
-[[toc]]
+# table structure
 
-## table structure
+## Table of Contents
+[[toc]]
 
 ### ozUser
 ::: tip
