@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Coding sample | zeo info center</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.be23ebbc.css" as="style"><link rel="preload" href="/assets/js/app.a56ef55a.js" as="script"><link rel="preload" href="/assets/js/2.6cc686bd.js" as="script"><link rel="preload" href="/assets/js/13.9d2b743d.js" as="script"><link rel="prefetch" href="/assets/js/10.67639410.js"><link rel="prefetch" href="/assets/js/11.51aba5a6.js"><link rel="prefetch" href="/assets/js/12.44a0a922.js"><link rel="prefetch" href="/assets/js/14.62581854.js"><link rel="prefetch" href="/assets/js/15.1e096da2.js"><link rel="prefetch" href="/assets/js/3.c9232f0e.js"><link rel="prefetch" href="/assets/js/4.09504529.js"><link rel="prefetch" href="/assets/js/5.dbf1cb2e.js"><link rel="prefetch" href="/assets/js/6.ac090b8d.js"><link rel="prefetch" href="/assets/js/7.fa62f6b9.js"><link rel="prefetch" href="/assets/js/8.8a9b5f88.js"><link rel="prefetch" href="/assets/js/9.c3f0c86a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.be23ebbc.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">zeo info center</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link router-link-active">
+  Guideline
+</a></div><div class="nav-item"><a href="/guide/command.html" class="nav-link">
+  Command
+</a></div><div class="nav-item"><a href="http://www.zebralinetech.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  About zeo
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link router-link-active">
+  Guideline
+</a></div><div class="nav-item"><a href="/guide/command.html" class="nav-link">
+  Command
+</a></div><div class="nav-item"><a href="http://www.zebralinetech.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  About zeo
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/guide/" aria-current="page" class="sidebar-link">Dev Information</a></li><li><a href="/guide/frontend.html" class="sidebar-link">Frontend UI</a></li><li><a href="/guide/backend.html" class="sidebar-link">table structure</a></li><li><a href="/guide/coding.html" aria-current="page" class="active sidebar-link">Coding sample</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/coding.html#mssql-query" class="sidebar-link">MSSQL query</a></li><li class="sidebar-sub-header"><a href="/guide/coding.html#encryption-and-decryption" class="sidebar-link">Encryption and Decryption</a></li><li class="sidebar-sub-header"><a href="/guide/coding.html#restful-api-key" class="sidebar-link">Restful API key</a></li><li class="sidebar-sub-header"><a href="/guide/coding.html#blob" class="sidebar-link">blob</a></li><li class="sidebar-sub-header"><a href="/guide/coding.html#redis" class="sidebar-link">Redis</a></li></ul></li><li><a href="/guide/Architecture.html" class="sidebar-link">Architecture</a></li><li><a href="/guide/BestPractice.html" class="sidebar-link">Best Practice</a></li><li><a href="/guide/command.html" class="sidebar-link">command</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="coding-sample"><a href="#coding-sample" class="header-anchor">#</a> Coding sample</h1> <h2 id="mssql-query"><a href="#mssql-query" class="header-anchor">#</a> MSSQL query</h2> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SELECT</span> <span class="token keyword">TOP</span> <span class="token number">10</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> ozUser
+</code></pre></div><h2 id="encryption-and-decryption"><a href="#encryption-and-decryption" class="header-anchor">#</a> Encryption and Decryption</h2> <p><a href="https://github.com/ianyian/EncryptionSymmetricKey.git" target="_blank" rel="noopener noreferrer">sample code<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <div class="language-csharp extra-class"><div class="highlight-lines"><br><br><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><div class="highlighted"> </div><br><br><br><br><br><br><br><br><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div><pre class="language-csharp"><code>    <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">AesOperation</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token return-type class-name"><span class="token keyword">string</span></span> <span class="token function">EncryptString</span><span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">string</span></span> key<span class="token punctuation">,</span> <span class="token class-name"><span class="token keyword">string</span></span> plainText<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token class-name"><span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span></span> iv <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name"><span class="token keyword">byte</span></span><span class="token punctuation">[</span><span class="token number">16</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+            <span class="token class-name"><span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span></span> array<span class="token punctuation">;</span>
+
+            <span class="token keyword">using</span> <span class="token punctuation">(</span><span class="token class-name">Aes</span> aes <span class="token operator">=</span> Aes<span class="token punctuation">.</span><span class="token function">Create</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                aes<span class="token punctuation">.</span>Key <span class="token operator">=</span> Encoding<span class="token punctuation">.</span>UTF8<span class="token punctuation">.</span><span class="token function">GetBytes</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                aes<span class="token punctuation">.</span>IV <span class="token operator">=</span> iv<span class="token punctuation">;</span>
+
+                <span class="token class-name">ICryptoTransform</span> encryptor <span class="token operator">=</span> aes<span class="token punctuation">.</span><span class="token function">CreateEncryptor</span><span class="token punctuation">(</span>aes<span class="token punctuation">.</span>Key<span class="token punctuation">,</span> aes<span class="token punctuation">.</span>IV<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+                <span class="token keyword">using</span> <span class="token punctuation">(</span><span class="token class-name">MemoryStream</span> memoryStream <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">MemoryStream</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+                <span class="token punctuation">{</span>
+                    <span class="token keyword">using</span> <span class="token punctuation">(</span><span class="token class-name">CryptoStream</span> cryptoStream <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">CryptoStream</span><span class="token punctuation">(</span><span class="token punctuation">(</span>Stream<span class="token punctuation">)</span>memoryStream<span class="token punctuation">,</span> encryptor<span class="token punctuation">,</span> CryptoStreamMode<span class="token punctuation">.</span>Write<span class="token punctuation">)</span><span class="token punctuation">)</span>
+                    <span class="token punctuation">{</span>
+                        <span class="token keyword">using</span> <span class="token punctuation">(</span><span class="token class-name">StreamWriter</span> streamWriter <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">StreamWriter</span><span class="token punctuation">(</span><span class="token punctuation">(</span>Stream<span class="token punctuation">)</span>cryptoStream<span class="token punctuation">)</span><span class="token punctuation">)</span>
+                        <span class="token punctuation">{</span>
+                            streamWriter<span class="token punctuation">.</span><span class="token function">Write</span><span class="token punctuation">(</span>plainText<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                        <span class="token punctuation">}</span>
+
+                        array <span class="token operator">=</span> memoryStream<span class="token punctuation">.</span><span class="token function">ToArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+
+            <span class="token keyword">return</span> Convert<span class="token punctuation">.</span><span class="token function">ToBase64String</span><span class="token punctuation">(</span>array<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token return-type class-name"><span class="token keyword">string</span></span> <span class="token function">DecryptString</span><span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">string</span></span> key<span class="token punctuation">,</span> <span class="token class-name"><span class="token keyword">string</span></span> cipherText<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token class-name"><span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span></span> iv <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name"><span class="token keyword">byte</span></span><span class="token punctuation">[</span><span class="token number">16</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+            <span class="token class-name"><span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span></span> buffer <span class="token operator">=</span> Convert<span class="token punctuation">.</span><span class="token function">FromBase64String</span><span class="token punctuation">(</span>cipherText<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token keyword">using</span> <span class="token punctuation">(</span><span class="token class-name">Aes</span> aes <span class="token operator">=</span> Aes<span class="token punctuation">.</span><span class="token function">Create</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                aes<span class="token punctuation">.</span>Key <span class="token operator">=</span> Encoding<span class="token punctuation">.</span>UTF8<span class="token punctuation">.</span><span class="token function">GetBytes</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                aes<span class="token punctuation">.</span>IV <span class="token operator">=</span> iv<span class="token punctuation">;</span>
+                <span class="token class-name">ICryptoTransform</span> decryptor <span class="token operator">=</span> aes<span class="token punctuation">.</span><span class="token function">CreateDecryptor</span><span class="token punctuation">(</span>aes<span class="token punctuation">.</span>Key<span class="token punctuation">,</span> aes<span class="token punctuation">.</span>IV<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+                <span class="token keyword">using</span> <span class="token punctuation">(</span><span class="token class-name">MemoryStream</span> memoryStream <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">MemoryStream</span><span class="token punctuation">(</span>buffer<span class="token punctuation">)</span><span class="token punctuation">)</span>
+                <span class="token punctuation">{</span>
+                    <span class="token keyword">using</span> <span class="token punctuation">(</span><span class="token class-name">CryptoStream</span> cryptoStream <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">CryptoStream</span><span class="token punctuation">(</span><span class="token punctuation">(</span>Stream<span class="token punctuation">)</span>memoryStream<span class="token punctuation">,</span> decryptor<span class="token punctuation">,</span> CryptoStreamMode<span class="token punctuation">.</span>Read<span class="token punctuation">)</span><span class="token punctuation">)</span>
+                    <span class="token punctuation">{</span>
+                        <span class="token keyword">using</span> <span class="token punctuation">(</span><span class="token class-name">StreamReader</span> streamReader <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">StreamReader</span><span class="token punctuation">(</span><span class="token punctuation">(</span>Stream<span class="token punctuation">)</span>cryptoStream<span class="token punctuation">)</span><span class="token punctuation">)</span>
+                        <span class="token punctuation">{</span>
+                            <span class="token keyword">return</span> streamReader<span class="token punctuation">.</span><span class="token function">ReadToEnd</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                        <span class="token punctuation">}</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</code></pre></div><h2 id="restful-api-key"><a href="#restful-api-key" class="header-anchor">#</a> Restful API key</h2> <p><a href="https://github.com/ianyian/Restful-ApiKey-based.git" target="_blank" rel="noopener noreferrer">sample code<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <div class="language-csharp extra-class"><pre class="language-csharp"><code><span class="token keyword">using</span> <span class="token namespace">Microsoft<span class="token punctuation">.</span>AspNetCore<span class="token punctuation">.</span>Mvc</span><span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token namespace">Restful_ApiKey_based<span class="token punctuation">.</span>Filters</span><span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token namespace">System</span><span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token namespace">System<span class="token punctuation">.</span>Collections<span class="token punctuation">.</span>Generic</span><span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token namespace">System<span class="token punctuation">.</span>Linq</span><span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token namespace">System<span class="token punctuation">.</span>Threading<span class="token punctuation">.</span>Tasks</span><span class="token punctuation">;</span>
+
+<span class="token keyword">namespace</span> <span class="token namespace">Restful_ApiKey_based<span class="token punctuation">.</span>Controllers</span>
+<span class="token punctuation">{</span>
+    <span class="token punctuation">[</span><span class="token attribute"><span class="token class-name">ApiKeyAuth</span></span><span class="token punctuation">]</span>
+    <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">SecretController</span> <span class="token punctuation">:</span> <span class="token type-list"><span class="token class-name">ControllerBase</span></span> 
+    <span class="token punctuation">{</span>
+        <span class="token punctuation">[</span><span class="token attribute"><span class="token class-name">HttpGet</span><span class="token attribute-arguments"><span class="token punctuation">(</span><span class="token named-parameter punctuation">template</span><span class="token punctuation">:</span><span class="token string">&quot;secret&quot;</span><span class="token punctuation">)</span></span></span><span class="token punctuation">]</span>
+        <span class="token keyword">public</span> <span class="token return-type class-name">IActionResult</span> <span class="token function">GetSecret</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token function">Ok</span><span class="token punctuation">(</span><span class="token string">&quot;i'm gooood&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-csharp extra-class"><pre class="language-csharp"><code><span class="token keyword">using</span> <span class="token namespace">Microsoft<span class="token punctuation">.</span>AspNetCore<span class="token punctuation">.</span>Mvc<span class="token punctuation">.</span>Filters</span><span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token namespace">Microsoft<span class="token punctuation">.</span>AspNetCore<span class="token punctuation">.</span>Mvc</span><span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token namespace">System</span><span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token namespace">System<span class="token punctuation">.</span>Threading<span class="token punctuation">.</span>Tasks</span><span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token namespace">Microsoft<span class="token punctuation">.</span>Extensions<span class="token punctuation">.</span>Configuration</span><span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token namespace">Microsoft<span class="token punctuation">.</span>Extensions<span class="token punctuation">.</span>DependencyInjection</span><span class="token punctuation">;</span>
+
+<span class="token keyword">namespace</span> <span class="token namespace">Restful_ApiKey_based<span class="token punctuation">.</span>Filters</span>
+<span class="token punctuation">{</span>
+    <span class="token punctuation">[</span><span class="token attribute"><span class="token class-name">AttributeUsage</span><span class="token attribute-arguments"><span class="token punctuation">(</span><span class="token named-parameter punctuation">validOn</span><span class="token punctuation">:</span> AttributeTargets<span class="token punctuation">.</span>Class <span class="token operator">|</span> AttributeTargets<span class="token punctuation">.</span>Method<span class="token punctuation">)</span></span></span><span class="token punctuation">]</span>
+    <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ApiKeyAuthAttribute</span> <span class="token punctuation">:</span> <span class="token type-list"><span class="token class-name">Attribute</span><span class="token punctuation">,</span> <span class="token class-name">IAsyncActionFilter</span></span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">private</span> <span class="token keyword">const</span> <span class="token class-name"><span class="token keyword">string</span></span> ApiKeyHeaderName <span class="token operator">=</span> <span class="token string">&quot;ApiKey&quot;</span><span class="token punctuation">;</span>
+        <span class="token keyword">public</span> <span class="token keyword">async</span> <span class="token return-type class-name">Task</span> <span class="token function">OnActionExecutionAsync</span><span class="token punctuation">(</span><span class="token class-name">ActionExecutingContext</span> context<span class="token punctuation">,</span> <span class="token class-name">ActionExecutionDelegate</span> next<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token comment">//before</span>
+            <span class="token comment">//context.HttpContext.Request.Query[&quot;ApiKey&quot;])</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>context<span class="token punctuation">.</span>HttpContext<span class="token punctuation">.</span>Request<span class="token punctuation">.</span>Headers<span class="token punctuation">.</span><span class="token function">TryGetValue</span><span class="token punctuation">(</span>ApiKeyHeaderName<span class="token punctuation">,</span> <span class="token keyword">out</span> <span class="token class-name"><span class="token keyword">var</span></span> PotentialApiKey<span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                context<span class="token punctuation">.</span>Result <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">UnauthorizedResult</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token keyword">return</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+
+            <span class="token class-name"><span class="token keyword">var</span></span> configuration <span class="token operator">=</span> context<span class="token punctuation">.</span>HttpContext<span class="token punctuation">.</span>RequestServices<span class="token punctuation">.</span><span class="token generic-method"><span class="token function">GetRequiredService</span> <span class="token generic class-name"><span class="token punctuation">&lt;</span>IConfiguration<span class="token punctuation">&gt;</span></span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name"><span class="token keyword">var</span></span> apikey <span class="token operator">=</span> configuration<span class="token punctuation">.</span><span class="token generic-method"><span class="token function">GetValue</span><span class="token generic class-name"><span class="token punctuation">&lt;</span>String<span class="token punctuation">&gt;</span></span></span><span class="token punctuation">(</span><span class="token string">&quot;ApiKey&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>apikey<span class="token punctuation">.</span><span class="token function">Equals</span><span class="token punctuation">(</span>PotentialApiKey<span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                context<span class="token punctuation">.</span>Result <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">UnauthorizedResult</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+
+            <span class="token keyword">await</span> <span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment">//after</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="blob"><a href="#blob" class="header-anchor">#</a> blob</h2> <p><a href="https://github.com/ianyian/AzureBlob.git" target="_blank" rel="noopener noreferrer">sample code<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <div class="language-csharp extra-class"><div class="highlight-lines"><br><br><br><br><br><br><br><br><br><br><br><br><br><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div><pre class="language-csharp"><code><span class="token keyword">using</span> <span class="token namespace">Azure<span class="token punctuation">.</span>Storage<span class="token punctuation">.</span>Blobs</span><span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token namespace">Azure<span class="token punctuation">.</span>Storage<span class="token punctuation">.</span>Blobs<span class="token punctuation">.</span>Models</span><span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token namespace">System</span><span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token namespace">System<span class="token punctuation">.</span>IO</span><span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token namespace">System<span class="token punctuation">.</span>Threading<span class="token punctuation">.</span>Tasks</span><span class="token punctuation">;</span>
+
+<span class="token keyword">namespace</span> <span class="token namespace">BlobQuickstartV12</span>
+<span class="token punctuation">{</span>
+    <span class="token comment">// comment</span>
+    <span class="token keyword">class</span> <span class="token class-name">Program</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">static</span> <span class="token keyword">async</span> <span class="token return-type class-name">Task</span> <span class="token function">Main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token class-name"><span class="token keyword">string</span></span> connectionString <span class="token operator">=</span> <span class="token string">&quot;DefaultEndpointsProtocol=https;AccountName=sqlvarvrgxbaty2h4s;AccountKey=dubYuxTY/hkTHoZcZz42bKBCrkgnV9RIk9KDP1tJK5cQktML6rWzPoEehWZ3+WJIbDxlnk9nUZcYV5UFEYrxxxxx;EndpointSuffix=core.windows.net&quot;</span><span class="token punctuation">;</span>
+            <span class="token comment">// Create a BlobServiceClient object which will be used to create a container client</span>
+            <span class="token class-name">BlobServiceClient</span> blobServiceClient <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">BlobServiceClient</span><span class="token punctuation">(</span>connectionString<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">//Create a unique name for the container</span>
+            <span class="token class-name"><span class="token keyword">string</span></span> containerName <span class="token operator">=</span> <span class="token string">&quot;quickstartblobs&quot;</span> <span class="token operator">+</span> Guid<span class="token punctuation">.</span><span class="token function">NewGuid</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">ToString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// Create the container and return a container client object</span>
+            <span class="token class-name">BlobContainerClient</span> containerClient <span class="token operator">=</span> <span class="token keyword">await</span> blobServiceClient<span class="token punctuation">.</span><span class="token function">CreateBlobContainerAsync</span><span class="token punctuation">(</span>containerName<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// Create a local file in the ./data/ directory for uploading and downloading</span>
+            <span class="token class-name"><span class="token keyword">string</span></span> localPath <span class="token operator">=</span> <span class="token string">&quot;./data/&quot;</span><span class="token punctuation">;</span>
+            <span class="token class-name"><span class="token keyword">string</span></span> fileName <span class="token operator">=</span> <span class="token string">&quot;quickstart&quot;</span> <span class="token operator">+</span> Guid<span class="token punctuation">.</span><span class="token function">NewGuid</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">ToString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">&quot;.txt&quot;</span><span class="token punctuation">;</span>
+            <span class="token class-name"><span class="token keyword">string</span></span> localFilePath <span class="token operator">=</span> Path<span class="token punctuation">.</span><span class="token function">Combine</span><span class="token punctuation">(</span>localPath<span class="token punctuation">,</span> fileName<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// Write text to the file</span>
+            <span class="token keyword">await</span> File<span class="token punctuation">.</span><span class="token function">WriteAllTextAsync</span><span class="token punctuation">(</span>localFilePath<span class="token punctuation">,</span> <span class="token string">&quot;Hello, World!&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// Get a reference to a blob</span>
+            <span class="token class-name">BlobClient</span> blobClient <span class="token operator">=</span> containerClient<span class="token punctuation">.</span><span class="token function">GetBlobClient</span><span class="token punctuation">(</span>fileName<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token string">&quot;Uploading to Blob storage as blob:\n\t {0}\n&quot;</span><span class="token punctuation">,</span> blobClient<span class="token punctuation">.</span>Uri<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// Upload data from the local file</span>
+            <span class="token keyword">await</span> blobClient<span class="token punctuation">.</span><span class="token function">UploadAsync</span><span class="token punctuation">(</span>localFilePath<span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token string">&quot;Listing blobs...&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// List all blobs in the container</span>
+            <span class="token keyword">await</span> <span class="token keyword">foreach</span> <span class="token punctuation">(</span><span class="token class-name">BlobItem</span> blobItem <span class="token keyword">in</span> containerClient<span class="token punctuation">.</span><span class="token function">GetBlobsAsync</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token string">&quot;\t&quot;</span> <span class="token operator">+</span> blobItem<span class="token punctuation">.</span>Name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+
+            <span class="token comment">// Download the blob to a local file</span>
+            <span class="token comment">// Append the string &quot;DOWNLOADED&quot; before the .txt extension </span>
+            <span class="token comment">// so you can compare the files in the data directory</span>
+            <span class="token class-name"><span class="token keyword">string</span></span> downloadFilePath <span class="token operator">=</span> localFilePath<span class="token punctuation">.</span><span class="token function">Replace</span><span class="token punctuation">(</span><span class="token string">&quot;.txt&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;DOWNLOADED.txt&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token string">&quot;\nDownloading blob to\n\t{0}\n&quot;</span><span class="token punctuation">,</span> downloadFilePath<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// Download the blob's contents and save it to a file</span>
+            <span class="token keyword">await</span> blobClient<span class="token punctuation">.</span><span class="token function">DownloadToAsync</span><span class="token punctuation">(</span>downloadFilePath<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// Clean up</span>
+            Console<span class="token punctuation">.</span><span class="token function">Write</span><span class="token punctuation">(</span><span class="token string">&quot;Press any key to begin clean up&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            Console<span class="token punctuation">.</span><span class="token function">ReadLine</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token string">&quot;Deleting blob container...&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">await</span> containerClient<span class="token punctuation">.</span><span class="token function">DeleteAsync</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token string">&quot;Deleting the local source and downloaded files...&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            File<span class="token punctuation">.</span><span class="token function">Delete</span><span class="token punctuation">(</span>localFilePath<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            File<span class="token punctuation">.</span><span class="token function">Delete</span><span class="token punctuation">(</span>downloadFilePath<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token string">&quot;Done&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><img src="/images/blob.bmp" alt="azure blob"></p> <h2 id="redis"><a href="#redis" class="header-anchor">#</a> Redis</h2> <p><a href="https://github.com/ianyian/RedisSample.git" target="_blank" rel="noopener noreferrer">sample code<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <div class="language-csharp extra-class"><pre class="language-csharp"><code><span class="token keyword">namespace</span> <span class="token namespace">Redistest</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">class</span> <span class="token class-name">Program</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">static</span> <span class="token return-type class-name"><span class="token keyword">void</span></span> <span class="token function">Main</span><span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">string</span><span class="token punctuation">[</span><span class="token punctuation">]</span></span> args<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token class-name"><span class="token keyword">var</span></span> program <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">Program</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token string">&quot;Saving random data in cache&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            program<span class="token punctuation">.</span><span class="token function">SaveBigData</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token string">&quot;Reading data from cache&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            program<span class="token punctuation">.</span><span class="token function">ReadData</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            Console<span class="token punctuation">.</span><span class="token function">ReadLine</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">public</span> <span class="token return-type class-name"><span class="token keyword">void</span></span> <span class="token function">ReadData</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token class-name"><span class="token keyword">var</span></span> cache <span class="token operator">=</span> RedisConnectorHelper<span class="token punctuation">.</span>Connection<span class="token punctuation">.</span><span class="token function">GetDatabase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name"><span class="token keyword">var</span></span> devicesCount <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">int</span></span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> devicesCount<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                <span class="token class-name"><span class="token keyword">var</span></span> <span class="token keyword">value</span> <span class="token operator">=</span> cache<span class="token punctuation">.</span><span class="token function">StringGet</span><span class="token punctuation">(</span><span class="token interpolation-string"><span class="token string">$&quot;Device_Status:</span><span class="token interpolation"><span class="token punctuation">{</span><span class="token expression language-csharp">i</span><span class="token punctuation">}</span></span><span class="token string">&quot;</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                Console<span class="token punctuation">.</span><span class="token function">WriteLine</span><span class="token punctuation">(</span><span class="token interpolation-string"><span class="token string">$&quot;Valor=</span><span class="token interpolation"><span class="token punctuation">{</span><span class="token expression language-csharp"><span class="token keyword">value</span></span><span class="token punctuation">}</span></span><span class="token string">&quot;</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">public</span> <span class="token return-type class-name"><span class="token keyword">void</span></span> <span class="token function">SaveBigData</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token class-name"><span class="token keyword">var</span></span> devicesCount <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+            <span class="token class-name"><span class="token keyword">var</span></span> rnd <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">Random</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name"><span class="token keyword">var</span></span> cache <span class="token operator">=</span> RedisConnectorHelper<span class="token punctuation">.</span>Connection<span class="token punctuation">.</span><span class="token function">GetDatabase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">int</span></span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> devicesCount<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                <span class="token class-name"><span class="token keyword">var</span></span> <span class="token keyword">value</span> <span class="token operator">=</span> rnd<span class="token punctuation">.</span><span class="token function">Next</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                cache<span class="token punctuation">.</span><span class="token function">StringSet</span><span class="token punctuation">(</span><span class="token interpolation-string"><span class="token string">$&quot;Device_Status:</span><span class="token interpolation"><span class="token punctuation">{</span><span class="token expression language-csharp">i</span><span class="token punctuation">}</span></span><span class="token string">&quot;</span></span><span class="token punctuation">,</span> <span class="token keyword">value</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/guide/backend.html" class="prev">
+        table structure
+      </a></span> <span class="next"><a href="/guide/Architecture.html">
+        Architecture
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.a56ef55a.js" defer></script><script src="/assets/js/2.6cc686bd.js" defer></script><script src="/assets/js/13.9d2b743d.js" defer></script>
+  </body>
+</html>
