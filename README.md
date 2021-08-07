@@ -6,5 +6,5 @@ tagline: v1.0.8.2
 actionText: Get Started →
 actionLink: /guide/
 
-footer: MIT Licensed | Copyright © 2018-present Evan You
+footer: MIT Licensed | Copyright © 2018-present Evan You   
 ---
