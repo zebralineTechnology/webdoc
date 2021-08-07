@@ -1,4 +1,4 @@
-# Application Development KnowledgeBase Website
+# vuePress
 
 For testing vuepress in your local machine after cloning the Git repository, do the following:
 

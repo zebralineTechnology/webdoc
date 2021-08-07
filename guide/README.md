@@ -5,7 +5,9 @@ zeo info is to putting all necessary information and material for zeo solution, 
 1. > azure [platform](https://portal.azure.com)
 2. > Sample code [Git](https://github.com/ianyian)
 3. > Visual Studio code [download](https://code.visualstudio.com) [How-to Visual Studio code](https://youtu.be/r5dtl9Uq9V0)
-
+4. > Windows terminal for Git [windows-terminal](https://docs.microsoft.com/en-us/windows/terminal/tutorials/powerline-setup) [oh-my-posh2] (https://github.com/JanDeDobbeleer/oh-my-posh2) [oh-my-posh3] (https://ohmyposh.dev/docs)
+      4.1 switch theme `set-poshPrompt -theme paradox`
+      4.2 theme list `get-poshthemes`
 
 Development coding languages and technogies
 
