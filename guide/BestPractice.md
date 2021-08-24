@@ -9,7 +9,7 @@
 
 ### 1. When driver trigger start button
     1.1 update ozRoute.RouteStepStatusID=RouteBusStart
-    1.2 insert ozRouteHistory
+    1.2 insert ozRouteHistory and RouteStepStatusID=Start (also update ozRouteHistory.RouteStepStatusID=ForceStop IF status still is RouteStepStatusID=Start)
     1.3 insert ozRouteStepHistory
     1.4 check if exist Radis.key (ozRoute.ID {routeID=2:*}) then delete
     1.5 create Radis.key (ozRouteID.ID { routeID=2:routeHistoryID=256 }) with Radis.value (json format with bus location timeStamp), set expire for 1hr
@@ -24,7 +24,7 @@
 
 ### 4. driver trigger stop button
     4.1 update ozRoute.RouteStepStatusID=RouteBusStop
-    4.2 insert ozRouteHistory
+    4.2 update ozRouteHistory.RouteStepStatusID=Stop
     4.3 insert ozRouteStepHistory
     4.4 check if exist Radis.key (ozRoute.ID {routeID=2:*}) then delete
 

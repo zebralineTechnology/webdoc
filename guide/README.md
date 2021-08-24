@@ -28,6 +28,13 @@ zeo info is to putting all necessary information and material for zeo solution, 
       
       5.3 edit file `NOTEPAD $profile`
 
+6.    NPM
+   
+      6.1 list down all NPM installed packages `npm list -g --depth=0`
+      * npm: the Node package manager command line tool
+      * list -g: display a tree of every package found in the user’s folders (without the -g option it only shows the current directory’s packages)
+      * --depth 0 / --depth=0: avoid including every package’s dependencies in the tree view
+
 Development coding languages and technogies
 
 <Badge type="tip" text="c#"  />
@@ -38,6 +45,7 @@ Development coding languages and technogies
 <Badge type="error" text="react native" />
 <Badge type="tip"  text="azure blob" />  
 <Badge type="warning" text="git" />  
+<Badge type="error" text="expo" />  
 :smile::tada:
 
 

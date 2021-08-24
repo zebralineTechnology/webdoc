@@ -33,7 +33,8 @@ history of user profile changes, first time register also need to be recorded.
 
 ### ozRoute
 ::: tip
-route info, one user can have multiple route
+route information, which input by user
+one user can have multiple route
 :::
 
 * ID=Auto incremental
@@ -47,6 +48,25 @@ route info, one user can have multiple route
 * BusID=Bus ID
 * AutoRegisterStatusID=Auto/Manual register status ID {auto/manual}
 * RouteStepStatusID=Route Step Status ID{ In/Out}
+
+### ozRouteDetailHistory
+::: tip
+to keep the Route changes information when user modified the record.
+:::
+
+### ozRouteHistory
+::: tip
+to record current bus location and status (WIP), one record per route round trip
+to avoid ozRoute table over hit and table lock; 
+this table will update every 3 sec
+:::
+
+### ozRouteStepHistory
+::: tip
+every 3 sec will insert bus location into this table, which for future reporting purpose.
+this table will grow extremely fast.
+:::
+
 
 ### ozBus
 ::: tip
@@ -130,6 +150,7 @@ system version, which included major, patch and hotfix
 | InActive | InActive status | 0 | BusStatus  |
 | Start | Route Bus start | 1 | RouteStepStatus  |
 | Stop | Route Bus stop | 0 | RouteStepStatus  |
+| ForceStop | Route Bus Force stop | 2 | RouteStepStatus  |
 | Active | Active route | 1 | RouteStatus  |
 | InActive | InActive route | 0 | RouteSatus  |
 | Active | Active route user relationship | 1 | DriverRouteStatus  |
