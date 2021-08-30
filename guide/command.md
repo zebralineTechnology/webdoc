@@ -5,7 +5,13 @@
 ### CLI-Tool
 Use the Redis command-line tool with Azure Cache for Redis
 [redis-cli-tool](https://docs.microsoft.com/en-us/azure/azure-cache-for-redis/cache-how-to-redis-cli-tool) 
+[redis-cli-zip](https://github.com/microsoftarchive/redis/archive/refs/tags/win-3.2.100.zip)
+[redis-clie-NodeJS] (https://docs.microsoft.com/en-us/azure/azure-cache-for-redis/cache-nodejs-get-started)
 
+### Redis connection
+```
+> redis-cli.exe -h zeoRedis20.redis.cache.windows.net -p 6379 -a Primary-access-key
+```
 
 
 ### CLIENT LIST
@@ -20,6 +26,7 @@ The INFO command returns information and statistics about the server in a format
 
 ```
 > info
+> keys *
 ```
 
 ### SET, GET, DEL, GETRANGE   
