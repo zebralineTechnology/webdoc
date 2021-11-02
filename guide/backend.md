@@ -26,10 +26,28 @@ Represent active user, when user register the APP, then here is the first touch 
 history of user status/step
 :::
 
+* ID=Auto incremental
+* UserID=User Identification
+* CreationDt=Creation datetime
+* UserStatusID=represent current user status
+* UserStepStatusID=user step status
+
 ### ozUserDetailHistory
 ::: tip
 history of user profile changes, first time register also need to be recorded.
 :::
+
+* ID=Auto incremental
+* GUID=Auto generate
+* UserID=User Identification
+* MobileNumber=mobile number, will make used of this number to push sms
+* Name=User name, free text
+* ICNumber=Identity card Number, free text , but need to remove space
+* CreationDt=Creation datetime
+* image=Url link of user profile image
+* UserStatusID=represent current user status
+* UserStepStatusID=user step status
+
 
 ### ozRoute
 ::: tip
@@ -54,6 +72,20 @@ one user can have multiple route
 to keep the Route changes information when user modified the record.
 :::
 
+* ID=Auto incremental
+* RouteID=Auto generate route ID
+* Name=User name
+* DestinationAddress=Destination Longtitude and Latitude
+* DestinationName=Name of the destination
+* UserID=Creator ID
+* RouteStatusID=RouteStatusID
+* DriverUserID=DriverUserID
+* LastUpdateDt=LastUpdateDt
+* BusID=Bus ID
+* AutoRegisterStatusID=Auto/Manual register status ID {auto/manual}
+* RouteStepStatusID=Route Step Status ID{ In/Out}
+
+
 ### ozRouteHistory
 ::: tip
 to record current bus location and status (WIP), one record per route round trip
@@ -61,11 +93,31 @@ to avoid ozRoute table over hit and table lock;
 this table will update every 3 sec
 :::
 
+* ID=Auto incremental
+* RouteID=Auto generate route ID
+* RouteStatusID=RouteStatusID
+* RouteStepStatusID=Route Step Status ID{ In/Out}
+* DriverUserID=DriverUser's ID
+* BusID=Bus ID
+* DestinationAddress=Destination's address
+* CurrentAddress=Bus's current address
+* LastUpdateDt=Bus last update time
+
 ### ozRouteStepHistory
 ::: tip
 every 3 sec will insert bus location into this table, which for future reporting purpose.
 this table will grow extremely fast.
 :::
+
+* ID=Auto incremental
+* RouteID=Auto generate route ID
+* BusID=Bus ID
+* RouteStepStatusID=Route Step Status ID{ In/Out}
+* DriverUserID=Driver User ID
+* RouteHistoryID=Route History ID
+* DestinationAddress=Destination's address
+* CurrentAddress=Bus current location
+* LastUpdateDt=Bus last update
 
 
 ### ozBus
@@ -77,8 +129,7 @@ bus info, busID + routeID = BusRouteKey
 * PlateNumber=freeText, but need to remove space, plateNumber allow in another userID
 * UserID=cretorID
 * CreationDt=creation datetime
-* BusStatus
-* BusStepStatus
+* BusStatusID=Active/Inactive
 * Image=Bus picture
 
 ### ozCompany
@@ -86,8 +137,11 @@ bus info, busID + routeID = BusRouteKey
 when first time user create route and bus, then this company record will also created
 :::
 
-* UserID=creatorID
-* CompanyCode=4 random number, unique
+* ID=Auto incremental
+* UserID=Creator ID
+* CompanyCode=4 unique and random number
+* CompanyName=Company name
+* CompanyAddress=Company address
 
 ### ozDriverRoute
 ::: tip
@@ -95,17 +149,35 @@ driver and route relationship
 when first time driver create route and bus, then driverRoute also need to be added
 :::
 
+* ID=Auto incremental
+* RouteID=Route ID
+* DriverUserID=Bus driver user ID
+* CreationDt=Create date and time
+* DriverRouteStatusID=Active/Inactive
+
 ### ozUserRoute
 ::: tip
 keep the relationship in between user and route
 :::
-
+* ID=Auto incremental
+* RouteID=Route ID
+* UserID=Creator ID
+* CreationDt=Route creation date and time
 * UserRouteStatusID=Active/InActive/PendingAproval/Reject
+* LastUpdateDt=Last update date and time
+* PickupAddress=Passenger pickup address
+* LastChatID=LastChatID
 
 ### ozChat
 ::: tip
 chat route history
 :::
+
+* ID=auto incremental
+* Value=Content of the messages
+* CreationDt=Date and time the messages was created
+* RouteID=RouteID
+* UserID=Creator ID
 
 ### luChatReason
 ::: tip
